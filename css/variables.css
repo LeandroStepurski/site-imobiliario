@@ -1,0 +1,57 @@
+/* VARIÁVEIS DO DESIGN SYSTEM */
+:root {
+  /* Cores extraídas diretamente da logo */
+  --color-primary: #8A7447;        /* O bronze dourado elegante da logo */
+  --color-primary-dark: #6E5C38;   /* Tom mais escuro para estados de foco/hover */
+  --color-primary-light: #F4F0E6;  /* Creme suave para fundos alternativos e cards */
+  --color-bg-main: #FBFBFA;        /* Off-white premium para o fundo das páginas */
+  --color-bg-card: #FFFFFF;        /* Branco puro para destacar os cards de imóveis */
+  --color-text-main: #2A261F;      /* Grafite escuro aquecido para excelente legibilidade */
+  --color-text-muted: #6E685E;     /* Cinza médio para descrições secundárias */
+  --color-border: #E5DFD3;         /* Linha divisória suave e elegante */
+
+  /* Tipografia */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  /* Arredondamento e Efeitos */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-soft: 0 4px 20px rgba(42, 38, 31, 0.05);
+  --shadow-medium: 0 8px 30px rgba(42, 38, 31, 0.08);
+}
+
+/* RESETS E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+button, input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}

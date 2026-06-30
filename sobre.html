@@ -4,31 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Encontre as melhores casas, apartamentos e terrenos com o Corretor Leandro Ferreira. Atendimento personalizado e transparente.">
-    <title>Leandro Ferreira | Corretor de Imóveis</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Conheça a trajetória e os valores do Corretor Leandro Ferreira. Atendimento exclusivo e transparente em Ponta Grossa.">
+    <title>Sobre Mim | Leandro Ferreira Corretor de Imóveis</title>
+    <!-- O nosso único arquivo mestre que gerencia todo o design modular -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Leandro Ferreira Corretor de Imóveis</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="imoveis.html">Imóveis</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Cabeçalho com a barra de navegação moderna -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="navbar-logo" alt="Leandro Ferreira Corretor de Imóveis" onerror="this.style.display='none'; document.getElementById('brand-text').style.display='block';">
+                <span id="brand-text" class="brand-text">Leandro Ferreira</span>
+            </a>
+            <nav>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-link">Home</a></li>
+                    <!-- Agora a aba ativa (active) com a linha dourada embaixo é a 'Sobre Mim' -->
+                    <li><a href="sobre.html" class="navbar-link active">Sobre Mim</a></li>
+                    <li><a href="imoveis.html" class="navbar-link">Imóveis</a></li>
+                    <li><a href="contato.html" class="navbar-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        
+        <section class="container">
+            <!-- Título elegante centralizado com a linha decorativa dourada abaixo -->
+            <h2 class="section-title">Sobre o Corretor</h2>
+            <p class="section-subtitle">Conheça a história e o compromisso por trás de cada negociação de sucesso.</p>
+
+            <!-- Grid que divide a tela em duas colunas (Foto na esquerda e história na direita) -->
+            <div class="about-container">
+                
+                <!-- Coluna 1: Foto Profissional do Leandro com moldura premium -->
+                <div class="about-image-wrapper">
+                    <img src="assets/Foto Perfil.png" class="about-img" alt="Leandro Ferreira Corretor de Imóveis" onerror="this.src='https://placehold.co/600x800/2a261f/8a7447?text=Leandro+Ferreira';">
+                    <div class="about-badge">CRECI F32934</div>
+                </div>
+
+                <!-- Coluna 2: Sua trajetória profissional e diferenciais -->
+                <div class="about-content">
+                    <h3 class="about-greeting">Muito prazer, sou Leandro Ferreira.</h3>
+                    
+                    <p class="about-text">
+                        Com sólida experiência no mercado imobiliário de Ponta Grossa e região, atuo de forma altamente personalizada para conectar pessoas exigentes a imóveis extraordinários. Meu compromisso é ir além da simples transação comercial: ofereço uma consultoria estratégica completa e discreta.
+                    </p>
+                    
+                    <p class="about-text">
+                        Especializado no segmento de <strong>alto padrão</strong> (casas em condomínio fechado, coberturas exclusivas e projetos arquitetônicos contemporâneos), compreendo que a busca por um novo lar ou por um investimento sólido exige atenção aos mínimos detalhes, segurança jurídica e confidencialidade absoluta.
+                    </p>
+
+                    <!-- Selo de Pilares / Valores de atuação -->
+                    <div class="pillars-grid">
+                        <div class="pillar-item">
+                            <span class="pillar-icon">🤝</span>
+                            <div>
+                                <strong>Transparência</strong>
+                                <p>Negociações claras, objetivas e baseadas na verdade.</p>
+                            </div>
+                        </div>
+                        <div class="pillar-item">
+                            <span class="pillar-icon">🛡️</span>
+                            <div>
+                                <strong>Segurança</strong>
+                                <p>Análise jurídica rigorosa para sua total tranquilidade.</p>
+                            </div>
+                        </div>
+                        <div class="pillar-item">
+                            <span class="pillar-icon">🤫</span>
+                            <div>
+                                <strong>Discrição</strong>
+                                <p>Sigilo absoluto em todas as etapas da sua aquisição.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão de Ação Direcionando ao Contato -->
+                    <div class="about-action">
+                        <a href="contato.html" class="btn-primary">Iniciar uma Consultoria</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank">Leandro Stepurski</a></p>
+    <!-- Rodapé Premium idêntico ao da Home -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="footer-logo" alt="Leandro Ferreira Logo" onerror="this.style.display='none';">
+                <p class="footer-brand-desc">
+                    Assessoria imobiliária personalizada voltada a atender às necessidades de clientes exigentes com excelência e descrição.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link-item">Início</a></li>
+                    <li><a href="sobre.html" class="footer-link-item">Sobre Mim</a></li>
+                    <li><a href="imoveis.html" class="footer-link-item">Imóveis Disponíveis</a></li>
+                    <li><a href="contato.html" class="footer-link-item">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Informações</h4>
+                <p class="footer-creci">CRECI F32934</p>
+                <p class="footer-region">Atendimento especializado na sua região.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank" class="footer-author-link">Leandro Stepurski</a></p>
+            <p class="footer-copyright">&copy; 2026 Leandro Ferreira Corretor de Imóveis. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>

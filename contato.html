@@ -4,65 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com o corretor Leandro Ferreira. Solicite avaliações, tire dúvidas ou agende visitas a imóveis.">
-    <title>Entre em contato com o corretor Leandro Ferreira</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Entre em contato com o Corretor Leandro Ferreira. Tire suas dúvidas sobre imóveis de luxo e agende uma visita.">
+    <title>Contato | Leandro Ferreira Corretor de Imóveis</title>
+    <!-- O nosso único arquivo mestre que gerencia todo o design modular -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Leandro Ferreira Corretor de Imóveis</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="imoveis.html">Imóveis</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Cabeçalho com a barra de navegação moderna -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="navbar-logo" alt="Leandro Ferreira Corretor de Imóveis" onerror="this.style.display='none'; document.getElementById('brand-text').style.display='block';">
+                <span id="brand-text" class="brand-text">Leandro Ferreira</span>
+            </a>
+            <nav>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-link">Home</a></li>
+                    <li><a href="sobre.html" class="navbar-link">Sobre Mim</a></li>
+                    <li><a href="imoveis.html" class="navbar-link">Imóveis</a></li>
+                    <!-- O link ativo ganha a classe 'active' para pintar a linha dourada embaixo -->
+                    <li><a href="contato.html" class="navbar-link active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- O bloco principal (MAIN) da página de contato -->
     <main>
-        <section id="contato">
-            <h2>Entre em contato</h2>
-            <p>Preencha o formulário abaixo para entrar em contato comigo. Responderei o mais breve possível.</p>
-            
-            <form id="form-contato" action="#" method="POST">
+        <section class="container">
+            <!-- Título elegante centralizado com a linha decorativa dourada abaixo -->
+            <h2 class="section-title">Fale Conosco</h2>
+            <p class="section-subtitle">Estou à sua disposição para esclarecer dúvidas e agendar visitas com total discrição.</p>
 
-                <div class="form-group">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"> 
-                    <span class="erro-mensagem" id="erro-nome"></span>
+            <!-- Grid que divide a tela em duas colunas (Info na esquerda e Formulário na direita) -->
+            <div class="contact-container">
+                
+                <!-- Coluna 1: Cartão com seus canais diretos de contato -->
+                <div class="contact-info-card">
+                    <h3 class="contact-info-title">Atendimento Direto</h3>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Região de Atuação</strong>
+                                <p>Atendimento VIP personalizado na sua região.</p>
+                            </div>
+                        </li>
+                        <li class="contact-list-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Telefone & WhatsApp</strong>
+                                <p><a href="https://wa.me/5542999999999" target="_blank" class="footer-author-link">(42) 99999-9999</a></p>
+                            </div>
+                        </li>
+                        <li class="contact-list-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>E-mail Comercial</strong>
+                                <p><a href="mailto:contato@leandroferreira.com.br" class="footer-author-link">contato@leandroferreira.com.br</a></p>
+                            </div>
+                        </li>
+                        <li class="contact-list-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <strong>Registro Profissional</strong>
+                                <p>CRECI F32934</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email">
-                    <span class="erro-mensagem" id="erro-email"></span>
+                <!-- Coluna 2: Formulário de Mensagem direto ao seu e-mail/banco de dados -->
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Obrigado! Sua mensagem foi simulada com sucesso.');">
+                        <div class="form-group">
+                            <label for="nome" class="form-label">Seu Nome Completo</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: João Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Seu E-mail de Contato</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Ex: joao@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone" class="form-label">Seu Telefone/WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="Ex: (42) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem" class="form-label">Sua Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Olá Leandro, tenho interesse em conhecer os imóveis disponíveis..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
                 </div>
 
-                <div class="form-group">
-                    <label for="telefone">Telefone / Whatsapp:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(42) 9 9999-9999"> 
-                    <span class="erro-mensagem" id="erro-telefone"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Qual tipo de imóvel você procura?"></textarea>
-                    <span class="erro-mensagem" id="erro-mensagem"></span>
-                </div>
-
-                <button type="submit">Enviar Mensagem</button>
-            </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank">Leandro Stepurski</a></p>
+    <!-- Rodapé Premium idêntico ao da Home -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="footer-logo" alt="Leandro Ferreira Logo" onerror="this.style.display='none';">
+                <p class="footer-brand-desc">
+                    Assessoria imobiliária personalizada voltada a atender às necessidades de clientes exigentes com excelência e descrição.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link-item">Início</a></li>
+                    <li><a href="sobre.html" class="footer-link-item">Sobre Mim</a></li>
+                    <li><a href="imoveis.html" class="footer-link-item">Imóveis Disponíveis</a></li>
+                    <li><a href="contato.html" class="footer-link-item">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Informações</h4>
+                <p class="footer-creci">CRECI F32934</p>
+                <p class="footer-region">Atendimento especializado na sua região.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank" class="footer-author-link">Leandro Stepurski</a></p>
+            <p class="footer-copyright">&copy; 2026 Leandro Ferreira Corretor de Imóveis. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,119 @@
+/* SEÇÃO HERO (BANNER DE ENTRADA) */ 
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(42, 38, 31, 0.6), rgba(42, 38, 31, 0.6)), 
+              url('[https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80)');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  color: #F4F0E6;
+}
+
+/* CAIXA DE FILTRO DE PESQUISA */
+.search-filter-box {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-medium);
+  margin-top: -4rem;
+  position: relative;
+  z-index: 10;
+  border: 1px solid var(--color-border);
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.filter-select, .filter-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  transition: var(--transition-smooth);
+}
+
+.filter-select:focus, .filter-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(138, 116, 71, 0.15);
+}
+
+/* BOTÕES */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(138, 116, 71, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(110, 92, 56, 0.3);
+}
+
+/* Ajustando os espaçamentos do filtro do hero... */
+.container-filter {
+  padding-top: 0;
+}
+
+.btn-search {
+  height: 48px;
+}

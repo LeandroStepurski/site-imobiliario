@@ -4,31 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Encontre as melhores casas, apartamentos e terrenos com o Corretor Leandro Ferreira. Atendimento personalizado e transparente.">
-    <title>Leandro Ferreira | Corretor de Imóveis</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore nosso catálogo exclusivo de casas, coberturas e apartamentos de alto padrão com o Corretor Leandro Ferreira.">
+    <title>Imóveis de Luxo | Leandro Ferreira Corretor de Imóveis</title>
+    <!-- Nosso arquivo mestre que gerencia as importações do CSS modular -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Leandro Ferreira Corretor de Imóveis</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="imoveis.html">Imóveis</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Cabeçalho idêntico ao das outras páginas (com a logo da pasta assets) -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="navbar-logo" alt="Leandro Ferreira Corretor de Imóveis" onerror="this.style.display='none'; document.getElementById('brand-text').style.display='block';">
+                <span id="brand-text" class="brand-text">Leandro Ferreira</span>
+            </a>
+            <nav>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-link">Home</a></li>
+                    <li><a href="sobre.html" class="navbar-link">Sobre Mim</a></li>
+                    <!-- Agora a aba ativa (active) com a linha dourada embaixo é a de Imóveis -->
+                    <li><a href="imoveis.html" class="navbar-link active">Imóveis</a></li>
+                    <li><a href="contato.html" class="navbar-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        
+        <section class="container">
+            <!-- Título elegante centralizado com a linha decorativa dourada abaixo -->
+            <h2 class="section-title">Portfólio Exclusivo</h2>
+            <p class="section-subtitle">Descubra uma seleção rigorosa de imóveis de alto padrão que combinam localização estratégica, arquitetura sofisticada e acabamento premium.</p>
+
+            <!-- Grade de exibição dos cartões (se adapta de 1 a 3 colunas de acordo com o tamanho da tela) -->
+            <div class="property-grid">
+
+                <!-- Card do Imóvel 1: Casa em Condomínio Fechado -->
+                <article class="property-card">
+                    <div class="property-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" class="property-img" alt="Casa de Alto Padrão em Condomínio">
+                        <span class="property-badge">Venda</span>
+                    </div>
+                    <div class="property-content">
+                        <p class="property-price">R$ 4.890.000</p>
+                        <h3 class="property-title">Casa Contemporânea em Condomínio</h3>
+                        <p class="property-location">📍 Jardim América, Ponta Grossa</p>
+                        <div class="property-details">
+                            <span class="detail-item">🛏️ 4 Suítes</span>
+                            <span class="detail-item">🚗 4 Vagas</span>
+                            <span class="detail-item">📐 450m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card do Imóvel 2: Cobertura Duplex de Luxo -->
+                <article class="property-card">
+                    <div class="property-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" class="property-img" alt="Cobertura Duplex">
+                        <span class="property-badge">Exclusivo</span>
+                    </div>
+                    <div class="property-content">
+                        <p class="property-price">R$ 3.450.000</p>
+                        <h3 class="property-title">Cobertura Duplex com Vista Panorâmica</h3>
+                        <p class="property-location">📍 Estrela, Ponta Grossa</p>
+                        <div class="property-details">
+                            <span class="detail-item">🛏️ 3 Suítes</span>
+                            <span class="detail-item">🚗 3 Vagas</span>
+                            <span class="detail-item">📐 320m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card do Imóvel 3: Mansão Minimalista -->
+                <article class="property-card">
+                    <div class="property-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="property-img" alt="Mansão Minimalista Moderna">
+                        <span class="property-badge">Destaque</span>
+                    </div>
+                    <div class="property-content">
+                        <p class="property-price">R$ 7.200.000</p>
+                        <h3 class="property-title">Mansão Minimalista com Piscina de Borda Infinita</h3>
+                        <p class="property-location">📍 Condomínio Royal Park, Ponta Grossa</p>
+                        <div class="property-details">
+                            <span class="detail-item">🛏️ 5 Suítes</span>
+                            <span class="detail-item">🚗 6 Vagas</span>
+                            <span class="detail-item">📐 680m²</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank">Leandro Stepurski</a></p>
+    <!-- Rodapé Premium idêntico ao da Home (com filtro inteligente de cores para a logo no fundo escuro) -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col-brand">
+                <img src="assets/Logo Leandro Corretor.png" class="footer-logo" alt="Leandro Ferreira Logo" onerror="this.style.display='none';">
+                <p class="footer-brand-desc">
+                    Assessoria imobiliária personalizada voltada a atender às necessidades de clientes exigentes com excelência e descrição.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link-item">Início</a></li>
+                    <li><a href="sobre.html" class="footer-link-item">Sobre Mim</a></li>
+                    <li><a href="imoveis.html" class="footer-link-item">Imóveis Disponíveis</a></li>
+                    <li><a href="contato.html" class="footer-link-item">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Informações</h4>
+                <p class="footer-creci">CRECI F32934</p>
+                <p class="footer-region">Atendimento especializado na sua região.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/leandro-stepurski-ferreira/" target="_blank" class="footer-author-link">Leandro Stepurski</a></p>
+            <p class="footer-copyright">&copy; 2026 Leandro Ferreira Corretor de Imóveis. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
