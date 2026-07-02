@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Encontre as melhores casas, apartamentos e terrenos com o Corretor Leandro Ferreira. Atendimento personalizado e transparente.">
     <title>Leandro Ferreira | Corretor de Imóveis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,14 +19,12 @@
     <!-- Cabeçalho com a barra de navegação -->
     <header class="navbar">
         <div class="navbar-container">
-            <a href="index.html" class="navbar-brand">
-                <!-- Busca logo na pasta assets e com classe para o CSS controlar o tamanho -->
-                <img src="assets/Logo Leandro Corretor.png" class="navbar-logo" alt="Leandro Ferreira Corretor de Imóveis" onerror="this.style.display='none'; document.getElementById('brand-text').style.display='block';">
-                <span id="brand-text" class="brand-text">Leandro Ferreira</span>
+            <a href="index.html">
+                <img src="assets/Logo Leandro Corretor.png" class="navbar-logo" alt="Leandro Ferreira Corretor de Imóveis">
             </a>
             <nav>
                 <ul class="navbar-menu">
-                    <li><a href="index.html" class="navbar-link active">Home</a></li>
+                    <li><a href="index.html" class="navbar-link active">Início</a></li>
                     <li><a href="sobre.html" class="navbar-link">Sobre Mim</a></li>
                     <li><a href="imoveis.html" class="navbar-link">Imóveis</a></li>
                     <li><a href="contato.html" class="navbar-link">Contato</a></li>
@@ -31,17 +34,17 @@
     </header>
 
     <main>
-        <!-- Banner Hero elegante -->
-        <section class="hero" id="boas-vindas">
-            <div class="hero-content">
+        <!-- Banner -->
+        <!-- <section class="hero" id="boas-vindas">
+            <div class="hero-conteudo">
                 <h1 class="hero-title">Encontre o imóvel dos seus sonhos</h1>
                 <p class="hero-subtitle">Ofereço suporte completo para compra e venda de imóveis com a transparência, agilidade e o padrão que você merece.</p>
-                <a href="imoveis.html" class="btn-primary">Ver Imóveis</a>
+                <a href="imoveis.html" class="btn-model">Ver Imóveis</a>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Barra de filtros rápidos de busca (agora sem estilos misturados) -->
-        <div class="container container-filter">
+        <!-- Filtros rápidos de busca -->
+        <!-- <div class="container container-filter">
             <div class="search-filter-box">
                 <form class="filter-grid" onsubmit="event.preventDefault();">
                     <div class="filter-group">
@@ -61,22 +64,21 @@
                         <label class="filter-label" for="finalidade">Finalidade</label>
                         <select class="filter-select" id="finalidade">
                             <option value="comprar">Comprar</option>
-                            <option value="alugar">Alugar</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn-primary btn-search">Buscar</button>
+                    <button type="submit" class="btn-model btn-search">Buscar</button>
                 </form>
             </div>
-        </div>
+        </div> -->
     </main>
 
-    <!-- Rodapé totalmente limpo de CSS inline -->
+    <!-- Rodapé -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-col-brand">
-                <img src="assets/Logo Leandro Corretor.png" class="footer-logo" alt="Leandro Ferreira Logo" onerror="this.style.display='none';">
+                <img src="assets/Logo Leandro Corretor.png" class="footer-logo" alt="Leandro Ferreira Logo">
                 <p class="footer-brand-desc">
-                    Assessoria imobiliária personalizada voltada a atender às necessidades de clientes exigentes com excelência e descrição.
+                    Assessoria personalizada voltada a atender às necessidades com excelência.
                 </p>
             </div>
             <div>
